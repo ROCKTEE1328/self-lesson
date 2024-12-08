@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tcapture</title>
+    <link rel="stylesheet" href="photoshop.css">
+        <!-- poppins font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <!-- jaro font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- righteous font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <nav class="photonav">
+        <div class="nav_logo">
+            <img src="/image/camera-removebg-preview.png" alt="" width="70px" height="70px" style="object-fit: cover;">
+            <h2 class="jaro-uniquifier">Tcapture</h2>
+
+        </div>
+
+        <ul class="nav_link">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">More</a></li>
+
+        </ul>
+
+    </nav>
+
+    <div id="photomobile" style="display: flex; align-items: center;">
+        <div style="font-size: 35px; cursor: pointer; padding-left: 10px;" onclick="openphoto()" class="mobilephoto">
+            &#9776;
+        </div>
+        <span class="mobilephoto" style="display: flex; align-items: center;">
+            <img src="/image/camera-removebg-preview.png" alt="" width="50px" height="50px" style="object-fit: cover;" class="mobilephoto">
+            <h2 style="font-family: 'Jaro', sans-serif; font-size: 20px;" class="mobilephoto">Tcapture</h2>
+        </span>
+    </div>
+    <div id="myPhotonav" class="photoside">
+        <a href="javascript:void(0)" class="endbtn" onclick="closephoto()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">contact</a>
+        <a href="#">More</a>
+    </div>
+    <script>
+        function openphoto() {
+            document.getElementById("myPhotonav").style.width = "250px";
+        }
+
+        function closephoto() {
+            document.getElementById("myPhotonav").style.width = "0";
+
+        }
+    </script>
+
+    <section class="landphoto" style="background-image: url(/image/main\ back.jpg); background-size: cover;">
+        <div>
+            <h1 class="landtext1 slide">
+                Tcapture Photography
+            </h1>
+            <p class="landtext2 slide">
+                Hi there am Rock Tee, I am a photographer<br> clink to see my profile
+            </p>
+
+            <a href="/" class="land-btn slide">
+                <button class="bn13">
+                    <span class="bn13span">Explore Services</span>
+                </button>
+            </a>
+        </div>
+
+    </section>
+
+    <header>
+        <h1 class="photo-name">
+            Moments captured By Tcapture
+        </h1>
+    </header>
+
+    <div style="margin-bottom: 20px;" class="photos">
+        <div class="photocon">
+            <img src="/image/light.jpg" alt="night light" width="100%" height="80%" style="object-fit: cover;">
+            <p class="photocap">
+                Night Light
+            </p>
+        </div>
+        <div class="photocon">
+            <img src="/image/smile.jpg" alt="night light" width="100%" height="80%" style="object-fit: cover;">
+            <p class="photocap">
+                Beach Tourist
+            </p>
+        </div>
+        <div class="photocon">
+            <img src="/image/brown skin.jpg" alt="night light" width="100%" height="80%" style="object-fit: cover;">
+            <p class="photocap">
+                Stunning Portrait
+            </p>
+        </div>
+
+    </div>
+
+    <div style="margin-bottom: 20px;" class="photos">
+        <div class="photocon">
+            <img src="/image/wlid life.jpg" alt="night light" width="100%" height="80%" style="object-fit: cover;">
+            <p class="photocap">
+                Wild Life
+            </p>
+        </div>
+        <div class="photocon">
+            <img src="/image/forest.jpg" alt="night light" width="100%" height="80%" style="object-fit: cover;">
+            <p class="photocap">
+                Forest Trail
+            </p>
+        </div>
+        <div class="photocon">
+            <img src="/image/MAIN MOUNTAIN.jpg" alt="night light" width="100%" height="80%" style="object-fit: cover;">
+            <p class="photocap">
+                Mountain View
+            </p>
+        </div>
+
+    </div>
+
+    <div style="margin-bottom: 20px;" class="photos">
+        <div class="photocon">
+            <img src="/image/car.jpg" alt="night light" width="100%" height="80%" style="object-fit: cover;">
+            <p class="photocap">
+                Car View
+            </p>
+        </div>
+        <div class="photocon">
+            <img src="/image/moon.jpg" alt="night light" width="100%" height="80%" style="object-fit: cover;">
+            <p class="photocap">
+                Moon Light
+            </p>
+        </div>
+        <div class="photocon">
+            <img src="/image/bts.jpg" alt="night light" width="100%" height="80%" style="object-fit: cover;">
+            <p class="photocap">
+                BTS Portrait
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>

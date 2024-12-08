@@ -1,0 +1,435 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 251, 246);
+}
+
+
+.jaro-uniquifier {
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(52, 46, 46);
+}
+.photonav{
+    height: 10vh;
+    background-color: rgb(255, 251, 246);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.nav_logo{
+    display: flex; 
+    height: 10vh; 
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 0px;
+}
+.nav_link{
+    list-style-type: none;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.nav_link a{
+    text-decoration: none;
+    margin-left: 40px;
+    color: rgb(52, 46, 46);
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-family: "Jaro", sans-serif;
+    position: relative;
+}
+.nav_link a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.7s;
+}
+.nav_link a:hover::after{
+    width: 100%;
+}
+
+.photoside{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.photoside a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(52, 46, 46);
+    display: block;
+    transition: 0.3s;
+}
+.photoside a:hover{
+    color: #f1f1f1;
+}
+.photoside .endbtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#photomobi/* Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 251, 246);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navigation Bar */
+.jaro-uniquifier {
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(52, 46, 46);
+}
+
+.photonav {
+  height: 10vh;
+  background-color: rgb(255, 251, 246);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.nav_logo {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.nav_link {
+  list-style-type: none;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.nav_link a {
+  text-decoration: none;
+  margin-left: 40px;
+  color: rgb(52, 46, 46);
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family: "Jaro", sans-serif;
+  position: relative;
+}
+
+.nav_link a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.7s;
+}
+
+.nav_link a:hover::after {
+  width: 100%;
+}
+
+/* Side Navigation */
+.photoside {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.photoside a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(52, 46, 46);
+  display: block;
+  transition: 0.3s;
+}
+
+.photoside a:hover {
+  color: #f1f1f1;
+}
+
+.photoside .endbtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+/* mobile size */
+@media screen and (min-width: 800px) {
+    .mobilephoto{
+        display: none;
+        height: 0;
+    }
+
+    #phototmobile{
+        display: none;
+        height: 0;
+    }
+    .photoside{
+        display: none;
+        height: 0;
+    }
+}
+@media screen and (max-width: 800px){
+    .photonav{
+        display: none;
+    }
+    .photoside a{font-size: 18px;}
+
+    .landphoto{
+        position: static;
+        max-height: unset;
+        display: flex;
+        line-height: 40px;
+        align-items: center;
+    }
+    .landtext1{
+        position: static;
+        font-size: smaller;
+    }
+    .landtext2{
+        position: static;
+        font-size: 12px;
+        padding-top: 5%;
+        line-height: 30px;
+        text-align: center;
+    }
+    .landphoto a{
+        position: static;
+        display: flex;
+        justify-content: center;
+        padding-top: 100%;
+    }
+    .land-btn{
+      padding-top: 10px;
+    }
+
+    .photo-name{
+        font-size: 25px;
+        overflow: hidden;
+    }
+    .photos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .photocon{
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+    }
+
+}
+
+.landphoto{
+    height: 90vh;
+    position: relative;
+    width: 100%;
+}
+.slide {
+    animation: bounce 1.5s ease-in backwards;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  
+    75% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.landtext1{
+    position: absolute;
+    width: 100%;
+    text-align: end;
+    top: 20%;
+    font-size: 50px;
+    color: whitesmoke;
+    font-family: "Righteous", sans-serif;
+}
+.landtext2{
+    position: absolute;
+    width: 100%;
+    bottom: 45%;
+    text-align: end;
+    font-size: 20px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    font-family: "Righteous", sans-serif;
+    line-height: 30px;
+}
+
+.land-btn{
+    position: absolute;
+    top: 65%;
+    left: 85%;
+    text-decoration: none;
+}
+.bn13{
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 50px;
+    width: 180px;
+    opacity: 1;
+    background-color: whitesmoke;
+    border: 1px soild rgba(0, 0, 0, 0.603);
+    border-radius: 15px;
+}
+.bn13 .bn13span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(192,51,41);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.bn13:hover{
+    animation: bn13rotate 0.7s ease-in-out both;
+}
+.bn13:hover .bn13span{
+    animation: bn13storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+}
+@keyframes bn13rotate {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes bn13storm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+}
+
+header{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.photo-name{
+    font-size: 2em;
+    color: rgb(192,51,41);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+}
+.photos{
+    display: flex;
+    justify-content: center;
+}
+.photocon{
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    border: 1px soild rgba(128, 128, 128, 0.957);
+    padding: 15px;
+    margin: 20px;
+    display: inline-block;
+    box-shadow: 5px 10px 10px gray;
+    border-radius: 20px;
+}
+.photocon img{
+    transition: height 0.5s ease-out 0.3s;
+}
+.photocon img:hover{
+    height: 83%;
+}
+.photocap{
+    font-size: 18px;
+    color: rgb(192,51,41);
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    font-family: "Righteous", sans-serif;
+}
